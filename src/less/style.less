@@ -1,0 +1,172 @@
+// Font
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:200,800');
+
+// Colors
+@base: rgba(255, 255, 255, .8);
+
+
+/* Normalizers */
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+html {
+	font-family: sans-serif;
+  	-ms-text-size-adjust: 100%;
+ 	-webkit-text-size-adjust: 100%;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
+  	display: block;
+}
+
+a {
+  background-color: transparent;
+}
+
+a:active, a:hover {
+  outline-width: 0;
+}
+
+
+
+/* Resets */
+body {
+	font-family: 'Work Sans', helvetica, arial, sans-serif;
+	font-size: 14px;
+	color: @base;
+    -webkit-font-smoothing: antialiased;
+}
+
+ul, ol {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: @base;
+}
+
+input,
+textarea,
+select,
+button {
+	font-family: 'Work Sans', helvetica, arial, sans-serif;
+}
+
+input:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+
+
+/* General Structure */
+.app-root {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(19, 19, 58, 1);
+    position: relative;
+	overflow: hidden;
+}
+
+
+
+/* Calculator Base/Body */
+.calculator {
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	z-index: 2;
+}
+
+
+
+/* Background Solution */
+.background {
+	position: absolute;
+	left: -2vw;
+	top: -2vh;
+	z-index: 1;
+	width: 104vw;
+	height: 104vh;
+	background-image: url('../../img/landscape-bg-1.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	filter: blur(40px);
+	opacity: .6;
+}
+
+
+
+/* Screen */
+.screen {
+    border-bottom: 1px solid @base;
+    padding: 0 0 20px;
+    text-align: right;
+    vertical-align: bottom;
+    overflow: hidden;
+    margin-bottom: 10px;
+	height: 49px;
+}
+
+.screen-content {
+    font-size: 32px;
+    line-height: 48px;
+    font-weight: 200;
+}
+
+
+
+/* Keypad */
+.key {
+    width: 25%;
+    height: 74px;
+	position: relative;
+	overflow: hidden;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 28px;
+    line-height: 60px;
+    font-weight: 200;
+    background-color: transparent;
+    background-color: initial;
+    cursor: pointer;
+    color: @base;
+    // font-family: 'Work Sans', helvetica, arial, sans-serif;
+	border-radius: 16px;
+	// &::after {
+	// 	content: '';
+	// 	pointer-events: none;
+	// 	position: absolute;
+	// 	top: 50%;
+	// 	left: 50%;
+	// 	transform: translate(-50%, -50%);
+	// 	width: 0;
+	// 	height: 0;
+	// 	opacity: 0;
+	// 	border-radius: 1000px;
+	// 	box-sizing: border-box;
+	// 	transition: width .2s ease-out, height .2s ease-out, opacity .2s ease-out;
+	// }
+	&:hover,
+    &:active,
+    &:focus {
+		&::after {
+			// // background-color: #ffd480;
+			// width: 60px;
+			// height: 60px;
+			// // width: 60%;
+			// // height: 60%;
+			// // opacity: .2;
+			// opacity: .4;
+			// border: 1px solid @base;
+		}
+    }
+}

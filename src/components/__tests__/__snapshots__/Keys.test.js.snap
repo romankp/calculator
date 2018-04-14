@@ -1,0 +1,168 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="keys"
+>
+  <div
+    className="key-row"
+  >
+    <button
+      className="key clear"
+      onClick={[Function]}
+      type="button"
+    >
+      C
+    </button>
+    <button
+      className="key left-paren"
+      onClick={[Function]}
+      type="button"
+    >
+      (
+    </button>
+    <button
+      className="key right-paren"
+      onClick={[Function]}
+      type="button"
+    >
+      )
+    </button>
+    <button
+      className="key divide"
+      onClick={[Function]}
+      type="button"
+    >
+      /
+    </button>
+  </div>
+  <div
+    className="key-row"
+  >
+    <button
+      className="key seven"
+      onClick={[Function]}
+      type="button"
+    >
+      7
+    </button>
+    <button
+      className="key eight"
+      onClick={[Function]}
+      type="button"
+    >
+      8
+    </button>
+    <button
+      className="key nine"
+      onClick={[Function]}
+      type="button"
+    >
+      9
+    </button>
+    <button
+      className="key multiply"
+      onClick={[Function]}
+      type="button"
+    >
+      *
+    </button>
+  </div>
+  <div
+    className="key-row"
+  >
+    <button
+      className="key four"
+      onClick={[Function]}
+      type="button"
+    >
+      4
+    </button>
+    <button
+      className="key five"
+      onClick={[Function]}
+      type="button"
+    >
+      5
+    </button>
+    <button
+      className="key six"
+      onClick={[Function]}
+      type="button"
+    >
+      6
+    </button>
+    <button
+      className="key subtract"
+      onClick={[Function]}
+      type="button"
+    >
+      -
+    </button>
+  </div>
+  <div
+    className="key-row"
+  >
+    <button
+      className="key one"
+      onClick={[Function]}
+      type="button"
+    >
+      1
+    </button>
+    <button
+      className="key two"
+      onClick={[Function]}
+      type="button"
+    >
+      2
+    </button>
+    <button
+      className="key three"
+      onClick={[Function]}
+      type="button"
+    >
+      3
+    </button>
+    <button
+      className="key add"
+      onClick={[Function]}
+      type="button"
+    >
+      +
+    </button>
+  </div>
+  <div
+    className="key-row"
+  >
+    <button
+      className="key pos-neg"
+      onClick={[Function]}
+      type="button"
+    >
+      +/-
+    </button>
+    <button
+      className="key zero"
+      onClick={[Function]}
+      type="button"
+    >
+      0
+    </button>
+    <button
+      className="key decimal"
+      onClick={[Function]}
+      type="button"
+    >
+      .
+    </button>
+    <button
+      className="key equals"
+      onClick={[Function]}
+      type="button"
+    >
+      =
+    </button>
+  </div>
+</div>
+`;
