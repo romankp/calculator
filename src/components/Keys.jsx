@@ -1,10 +1,8 @@
-var React = require('react');
+import React from 'react';
 
 class Keys extends React.Component {
     constructor(props) {
         super(props);
-
-        // This binding is necessary to make `this` work in the callback
         this.registerClick = this.registerClick.bind(this);
     }
 
@@ -95,4 +93,4 @@ class Keys extends React.Component {
     };
 };
 
-module.exports = Keys;
+export default Keys;
