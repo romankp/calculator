@@ -1,10 +1,12 @@
-var React = require('react');
-var Screen = require('./Screen.jsx');
-var Keys = require('./Keys.jsx');
+import React from 'react';
+
+import Screen from './Screen.jsx';
+import Keys from './Keys.jsx';
 
 class CalculatorApp extends React.Component {
     constructor(props) {
         super(props);
+
         this.state = {
             screenContent: ''
         };
@@ -249,7 +251,7 @@ class CalculatorApp extends React.Component {
 
     render() {
         return (
-            <div className="app-root">
+            <div className="app-wrapper">
                 <main className="calculator">
                     <Screen
                         screenContent={this.state.screenContent}
@@ -264,4 +266,4 @@ class CalculatorApp extends React.Component {
     }
 };
 
-module.exports = CalculatorApp;
+export default CalculatorApp;

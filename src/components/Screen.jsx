@@ -1,17 +1,16 @@
-var React = require('react');
+import React from 'react';
+import PropTypes from 'prop-types';
 
-//var Screen = React.createClass({
+const Screen = props => {
+    return (
+        <div className="screen">
+            <span className="screen-content">{props.screenContent}</span>
+        </div>
+    )
+}
 
-class Screen extends React.Component {
-    // render: function() {
-    render() {
-        return (
-            <div className="screen">
-                <span className="screen-content">{this.props.screenContent}</span>
-            </div>
-        )
-    }
-// });
+Screen.propTypes = {
+    screenContent: PropTypes.string
 };
 
-module.exports = Screen;
+export default Screen;

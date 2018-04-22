@@ -1,17 +1,37 @@
-var React = require('react');
+import React from 'react';
 
 class Keys extends React.Component {
     constructor(props) {
         super(props);
-
-        // This binding is necessary to make `this` work in the callback
         this.registerClick = this.registerClick.bind(this);
     }
+
+    // const keyDetails = {
+    //     ['c', 'clear'],
+    //     ['(', 'left-paren'],
+    //     [')', 'right-paren'],
+    //     ['/', 'divide'],
+    //     ['7', 'seven'],
+    //     ['8', 'eight'],
+    //     ['9', 'nine'],
+    //     ['*', 'multiply'],
+    //     ['4', 'four'],
+    //     ['5', 'five'],
+    //     ['6', 'six'],
+    //     ['-', 'subtract'],
+    //     ['1', 'one'],
+    //     ['2', 'two'],
+    //     ['3', 'three'],
+    //     ['+', 'plus'],
+    //     ['+/-', 'pos-neg'],
+    //     ['0', 'zero'],
+    //     ['.', 'decimal'],
+    //     ['=', 'equals']
+    // }
 
     registerClick(keyFunction) {
         this.props.handleKeyClick(keyFunction);
     };
-
 
     render() {
         return (
@@ -95,4 +115,4 @@ class Keys extends React.Component {
     };
 };
 
-module.exports = Keys;
+export default Keys;
