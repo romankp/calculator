@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Screen(props) {
+const Screen = props => {
     return (
         <div className="screen">
             <span className="screen-content">{props.screenContent}</span>
